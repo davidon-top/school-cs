@@ -46,6 +46,7 @@ pub mod u45;
 pub mod u46;
 pub mod u47;
 pub mod u48;
+mod utils;
 
 fn main() {
     let ulohy = vec![
