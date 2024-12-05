@@ -7,4 +7,5 @@ edition = "2024"
 opt-level = 3
 
 [dependencies]
+pyo3 = { version = "0.23.3", features = ["auto-initialize"] }
 turtle = "1.0.0-rc.3"
