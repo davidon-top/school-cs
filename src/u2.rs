@@ -1,4 +1,4 @@
-use std::ffi::{CStr, CString};
+use std::ffi::CString;
 use pyo3::ffi::c_str;
 use pyo3::prelude::*;
 

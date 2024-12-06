@@ -1,10 +1,10 @@
 pub fn main() {
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).unwrap();
-    let a: u128 = input.trim().parse().unwrap();
+    let a: u128 = input.trim().parse().expect("Ocakavali sme prirodzene cislo");
     input.clear();
     std::io::stdin().read_line(&mut input).unwrap();
-    let b: u128 = input.trim().parse().unwrap();
+    let b: u128 = input.trim().parse().expect("ocakavali sme prirodzene cislo");
     input.clear();
     
     devidable(a, b);
