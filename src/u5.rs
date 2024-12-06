@@ -21,7 +21,11 @@ pub fn main() {
 
     let out = fun(a, b);
     println!("{}", out);
-    
-    let mut file = std::fs::OpenOptions::new().write(true).create(true).open("output.txt").unwrap();
+
+    let mut file = std::fs::OpenOptions::new()
+        .write(true)
+        .create(true)
+        .open("output.txt")
+        .unwrap();
     file.write_all(out.to_string().as_bytes()).unwrap();
 }

@@ -7,7 +7,7 @@ Poznámka: Palindróm je slovo, veta, číslo (všeobecne akákoľvek postupnos�
 pub fn main() {
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).unwrap();
-    
+
     println!("{}", palindrome(input.trim().to_string()));
 }
 

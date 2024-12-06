@@ -10,7 +10,6 @@ pub fn main() {
     std::io::stdin().read_line(&mut input).unwrap();
     println!("opacny retazec: {}", opacne_poradie(&input));
     input.clear();
-
 }
 
 fn opacne_poradie(input: &String) -> String {
