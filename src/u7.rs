@@ -1,7 +1,7 @@
 pub fn main() {
     let mut input = String::new();
-    std::io::stdin().read_line(&mut input).unwrap();
     println!("Zadaj cislo a zaciatok intervalu: ");
+    std::io::stdin().read_line(&mut input).unwrap();
     let a: i128 = input.trim().parse().unwrap();
     input.clear();
     println!("Zadaj cislo b koniec intervalu: ");
