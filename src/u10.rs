@@ -8,6 +8,7 @@ pub fn main() {
     println!("{:?}", v);
     
     let mut input = String::new();
+    println!("zadajte cislo");
     std::io::stdin().read_line(&mut input).unwrap();
     let input: f32 = input.trim().parse().unwrap();
     println!("{}", v.iter().position(|x| *x == input).unwrap_or(usize::MAX))

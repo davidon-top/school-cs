@@ -1,12 +1,14 @@
 pub fn main() {
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).unwrap();
+    println!("Zadaj cislo a zaciatok intervalu: ");
     let a: i128 = input.trim().parse().unwrap();
     input.clear();
+    println!("Zadaj cislo b koniec intervalu: ");
     std::io::stdin().read_line(&mut input).unwrap();
     let b: i128 = input.trim().parse().unwrap();
     input.clear();
-
+    println!("Zadaj operaciu (p, parne, n, neparne): ");
     std::io::stdin().read_line(&mut input).unwrap();
     let op = input.trim();
 

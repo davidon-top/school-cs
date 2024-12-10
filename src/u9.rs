@@ -1,5 +1,6 @@
 pub fn main() {
     let mut input = String::new();
+    println!("zadajte retazec");
     std::io::stdin().read_line(&mut input).unwrap();
     //i, í, y, ý, I, Í, Y, Ý
     let input = input

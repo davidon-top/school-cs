@@ -3,12 +3,15 @@ use std::ops::{Add, Sub};
 
 pub fn main() {
     let mut input = String::new();
+    println!("Zadaj cislo a: ");
     std::io::stdin().read_line(&mut input).unwrap();
     let a: i128 = input.trim().parse().unwrap();
     input.clear();
+    println!("Zadaj cislo b: ");
     std::io::stdin().read_line(&mut input).unwrap();
     let b: i128 = input.trim().parse().unwrap();
     input.clear();
+    println!("Zadaj operaciu (+, -, priemer): ");
     std::io::stdin().read_line(&mut input).unwrap();
     let op = input.trim().clone();
 

@@ -1,17 +1,21 @@
 pub fn main() {
     let mut input = String::new();
+    println!("Zadajte prirodzene cislo a zaciatok intervalu: ");
     std::io::stdin().read_line(&mut input).unwrap();
     let a: u128 = input
         .trim()
         .parse()
         .expect("Ocakavali sme prirodzene cislo");
     input.clear();
+    println!("Zadajte prirodzene cislo b koniec intervalu: ");
     std::io::stdin().read_line(&mut input).unwrap();
     let b: u128 = input
         .trim()
         .parse()
         .expect("ocakavali sme prirodzene cislo");
     input.clear();
+    
+    println!("Cisla delitelne tromi v intervale od {} do {}", a, b);
 
     devidable(a, b);
 }
