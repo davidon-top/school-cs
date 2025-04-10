@@ -24,9 +24,12 @@ pub fn main() {
                 .collect::<Vec<_>>(),
         ));
     }
-    let ziaci = ziaci
+    let mut ziaci = ziaci
         .iter()
         .map(|z| (z, z.2.iter().sum::<i32>() as f64 / 5.0))
-        .collect::<Vec<_>>()
-        .sort_by(|z, e| z.1.partial_cmp(&e.1).unwrap());
+        .collect::<Vec<_>>();
+    ziaci.sort_by(|z, e| z.1.partial_cmp(&e.1).unwrap());
+    ziaci.iter().for_each(|z| {
+        println!("meno: {}, priemer: {}", z.0.0, z.1)
+    });
 }
