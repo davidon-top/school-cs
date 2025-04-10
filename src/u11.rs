@@ -8,6 +8,16 @@ pub fn main() {
         panic!("Invalid input");
     }
     let mut input = input.to_lowercase();
-    input = input.chars().enumerate().map(|(i, c)| if i == 0 { c.to_uppercase().next().unwrap() } else { c }).collect();
+    input = input
+        .chars()
+        .enumerate()
+        .map(|(i, c)| {
+            if i == 0 {
+                c.to_uppercase().next().unwrap()
+            } else {
+                c
+            }
+        })
+        .collect();
     println!("{}", input);
 }

@@ -14,7 +14,7 @@ pub fn main() {
         .parse()
         .expect("ocakavali sme prirodzene cislo");
     input.clear();
-    
+
     println!("Cisla delitelne tromi v intervale od {} do {}", a, b);
 
     devidable(a, b);
