@@ -3,9 +3,7 @@ pub fn main() {
 }
 
 fn rec(num: i32) {
-    if num >= 1000 {
-        return;
-    }
+    if num >= 1000 { return };
     println!("num: {num}");
     rec(num + 7)
 }
